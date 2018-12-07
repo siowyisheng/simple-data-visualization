@@ -1,4 +1,4 @@
-# The Simple Guide to Data Visualization
+# The Simple Guide to Data Visualization with Python
 
 _Data Visualization with Python explained simply._
 
