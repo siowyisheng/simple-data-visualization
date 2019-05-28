@@ -1,11 +1,11 @@
-Welcome to simple-data-visualization's documentation!
-=====================================================
+Simple software development
+============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   Sphinx Usage<sphinx>
+   Sphinx<sphinx>
 
 
 Indices and tables
