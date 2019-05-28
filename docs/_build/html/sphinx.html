@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quick Start &mdash; simple-data-visualization 0.0.1 documentation</title>
+  <title>Simple Sphinx &mdash; simple-data-visualization 0.0.1 documentation</title>
   
 
   
@@ -36,7 +36,6 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sphinx Simple Usage" href="sphinx.html" />
     <link rel="prev" title="Welcome to simple-data-visualization’s documentation!" href="index.html" /> 
 </head>
 
@@ -83,11 +82,12 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup-new-project">Setup new project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-use-rtd-theme"><em>(Optional)</em> Use RTD Theme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interesting-section">Interesting Section</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sphinx.html">Sphinx Usage</a></li>
 </ul>
 
             
@@ -133,13 +133,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Quick Start</li>
+      <li>Simple Sphinx</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/sphinx.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -152,9 +152,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Here’s how you start!</p>
+  <div class="section" id="simple-sphinx">
+<h1>Simple Sphinx<a class="headerlink" href="#simple-sphinx" title="Permalink to this headline">¶</a></h1>
+<p>Your project should be in a <a class="reference external" href="https://github.com/">github</a> repository. Then,
+sign up for a <a class="reference external" href="https://readthedocs.org/accounts/signup/">readthedocs account</a> with
+your github account.</p>
+<div class="section" id="setup-new-project">
+<h2>Setup new project<a class="headerlink" href="#setup-new-project" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Install sphinx with pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx
+</pre></div>
+</div>
+</li>
+<li><p>As best practice, use a separate <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. From your project folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mkdir docs
+$ cd docs
+</pre></div>
+</div>
+</li>
+<li><p>Use the sphinx quickstart and follow the prompts:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
+</pre></div>
+</div>
+</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> to create the html file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
+</pre></div>
+</div>
+</li>
+<li><p>Open the html file to view it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ open _build/html/index.html
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="optional-use-rtd-theme">
+<h2><em>(Optional)</em> Use RTD Theme<a class="headerlink" href="#optional-use-rtd-theme" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://bootstrap-datepicker.readthedocs.io/en/latest/">It looks like this.🌈</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx_rtd_theme
+</pre></div>
+</div>
+<p>In your conf.py file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_rtd_theme&quot;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="interesting-section">
 <h2>Interesting Section<a class="headerlink" href="#interesting-section" title="Permalink to this headline">¶</a></h2>
 <p>Here’s the awesome content!</p>
@@ -188,7 +232,7 @@ This is <a class="reference external" href="https://www.animelyrics.com/anime/ki
 <p class="admonition-title">Warning</p>
 <p>note the space between the directive and the text</p>
 </div>
-<p><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">samplet.py</span></code></p>
+<p><a class="reference download internal" download="" href="_downloads/b6a839a66d8aac8c23619730a2646465/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">samplet.py</span></code></a></p>
 <div class="math notranslate nohighlight">
 \[n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k\]</div>
 <p>Some text that requires a footnote <a class="footnote-reference brackets" href="#f1" id="id1">1</a> .</p>
@@ -208,8 +252,6 @@ This is <a class="reference external" href="https://www.animelyrics.com/anime/ki
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="sphinx.html" class="btn btn-neutral float-right" title="Sphinx Simple Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to simple-data-visualization’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

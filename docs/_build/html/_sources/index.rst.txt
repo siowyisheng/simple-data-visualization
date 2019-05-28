@@ -5,7 +5,7 @@ Welcome to simple-data-visualization's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   quickstart
+   Sphinx Usage<sphinx>
 
 
 Indices and tables
