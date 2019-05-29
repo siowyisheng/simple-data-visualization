@@ -3,14 +3,6 @@ Simple software development
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Topics:
 
    Sphinx<sphinx>
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
